@@ -1,0 +1,11 @@
+# Playbook voor meerdere roles
+- name: Gitlab Initial
+  hosts: 10.13.1.45
+  become: yes
+
+  tasks:
+
+- name: Rollen
+  hosts: 10.13.1.45
+  roles:
+   - hostname
