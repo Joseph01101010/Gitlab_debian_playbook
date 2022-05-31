@@ -4,4 +4,8 @@
   become: yes
 
   tasks:
-    - action: ping
+
+- name: Rollen
+  hosts: 10.13.1.45
+  roles:
+   - hostname
